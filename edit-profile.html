@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Mini Social Network</title>
+</head>
+
+<body>
+
+    <h1>Mini Social Network</h1>
+
+    <nav>
+        <a href="newsfeed.html">Home</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <hr>
+
+    <h2>Edit Profile</h2>
+
+    <form>
+
+        <label for="profile-picture">Profile Picture:</label><br>
+        <input
+            type="file"
+            id="profile-picture"
+            name="profile-picture"
+            accept="image/*"
+        >
+
+        <br><br>
+
+        <label for="fullname">Full Name:</label><br>
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            value="Crystal Jane Cinco"
+            required
+        >
+
+        <br><br>
+
+        <label for="username">Username:</label><br>
+        <input
+            type="text"
+            id="username"
+            name="username"
+            value="crystal"
+            required
+        >
+
+        <br><br>
+
+        <label for="bio">Bio:</label><br>
+        <textarea
+            id="bio"
+            name="bio"
+            rows="5"
+            cols="50"
+        >Hello! Welcome to my profile. I enjoy connecting with friends and sharing my thoughts.</textarea>
+
+        <br><br>
+
+        <button type="submit">Save Changes</button>
+
+    </form>
+
+    <br>
+
+    <a href="profile.html">Cancel</a>
+
+</body>
+</html>
