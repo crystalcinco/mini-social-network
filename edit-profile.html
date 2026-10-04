@@ -1,76 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Edit Profile - Mini Social Network</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Mini Social Network</h1>
+    <!-- HEADER -->
 
-    <nav>
-        <a href="newsfeed.html">Home</a> |
-        <a href="profile.html">Profile</a> |
-        <a href="login.html">Logout</a>
-    </nav>
+    <header>
 
-    <hr>
+        <h1>Mini Social Network</h1>
 
-    <h2>Edit Profile</h2>
+        <nav>
+            <a href="newsfeed.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Logout</a>
+        </nav>
 
-    <form>
+    </header>
 
-        <label for="profile-picture">Profile Picture:</label><br>
-        <input
-            type="file"
-            id="profile-picture"
-            name="profile-picture"
-            accept="image/*"
-        >
 
-        <br><br>
+    <!-- EDIT PROFILE -->
 
-        <label for="fullname">Full Name:</label><br>
-        <input
-            type="text"
-            id="fullname"
-            name="fullname"
-            value="Crystal Jane Cinco"
-            required
-        >
+    <main class="container">
 
-        <br><br>
+        <div class="card">
 
-        <label for="username">Username:</label><br>
-        <input
-            type="text"
-            id="username"
-            name="username"
-            value="crystal"
-            required
-        >
+            <h2>Edit Profile</h2>
 
-        <br><br>
+            <form>
 
-        <label for="bio">Bio:</label><br>
-        <textarea
-            id="bio"
-            name="bio"
-            rows="5"
-            cols="50"
-        >Hello! Welcome to my profile. I enjoy connecting with friends and sharing my thoughts.</textarea>
+                <!-- PROFILE PICTURE -->
 
-        <br><br>
+                <label for="profile-picture">
+                    Profile Picture:
+                </label>
 
-        <button type="submit">Save Changes</button>
+                <input
+                    type="file"
+                    id="profile-picture"
+                    name="profile-picture"
+                    accept="image/*"
+                >
 
-    </form>
 
-    <br>
+                <!-- FULL NAME -->
 
-    <a href="profile.html">Cancel</a>
+                <label for="fullname">
+                    Full Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    value="Crystal Jane Cinco"
+                    required
+                >
+
+
+                <!-- USERNAME -->
+
+                <label for="username">
+                    Username:
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    value="crystal"
+                    required
+                >
+
+
+                <!-- BIO -->
+
+                <label for="bio">
+                    Bio:
+                </label>
+
+                <textarea
+                    id="bio"
+                    name="bio"
+                    rows="5"
+                    placeholder="Write something about yourself..."
+                >Hello! Welcome to my profile. I enjoy connecting with friends and sharing my thoughts.</textarea>
+
+
+                <!-- SAVE -->
+
+                <button type="submit">
+                    Save Changes
+                </button>
+
+            </form>
+
+
+            <br>
+
+            <a href="profile.html">
+                Cancel
+            </a>
+
+        </div>
+
+    </main>
 
 </body>
+
 </html>
